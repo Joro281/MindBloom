@@ -27,18 +27,18 @@ const FooterSection = () => {
             
             {/* Social Media */}
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-pink-400 transition-colors duration-300 p-1 rounded-lg hover:bg-gray-800">
+              <span className="text-gray-400 hover:text-pink-400 transition-colors duration-300 p-1 rounded-lg hover:bg-gray-800 cursor-pointer">
                 <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-pink-400 transition-colors duration-300 p-1 rounded-lg hover:bg-gray-800">
+              </span>
+              <span className="text-gray-400 hover:text-pink-400 transition-colors duration-300 p-1 rounded-lg hover:bg-gray-800 cursor-pointer">
                 <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-pink-400 transition-colors duration-300 p-1 rounded-lg hover:bg-gray-800">
+              </span>
+              <span className="text-gray-400 hover:text-pink-400 transition-colors duration-300 p-1 rounded-lg hover:bg-gray-800 cursor-pointer">
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-pink-400 transition-colors duration-300 p-1 rounded-lg hover:bg-gray-800">
+              </span>
+              <span className="text-gray-400 hover:text-pink-400 transition-colors duration-300 p-1 rounded-lg hover:bg-gray-800 cursor-pointer">
                 <Linkedin className="w-5 h-5" />
-              </a>
+              </span>
             </div>
           </div>
 
@@ -49,40 +49,40 @@ const FooterSection = () => {
             <h4 className="text-lg font-semibold mb-4 text-white">Our Services</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-gray-300 hover:text-pink-400 transition-colors duration-300 text-base flex items-center group">
+                <span className="text-gray-300 hover:text-pink-400 transition-colors duration-300 text-base flex items-center group cursor-pointer">
                   <span className="w-2 h-2 bg-pink-400 rounded-full mr-3 group-hover:scale-125 transition-transform"></span>
                   AI Wellness Companion
-                </Link>
+                </span>
               </li>
               <li>
-                <Link href="#" className="text-gray-300 hover:text-pink-400 transition-colors duration-300 text-base flex items-center group">
+                <span className="text-gray-300 hover:text-pink-400 transition-colors duration-300 text-base flex items-center group cursor-pointer">
                   <span className="w-2 h-2 bg-pink-400 rounded-full mr-3 group-hover:scale-125 transition-transform"></span>
                   Licensed Therapy
-                </Link>
+                </span>
               </li>
               <li>
-                <Link href="#" className="text-gray-300 hover:text-pink-400 transition-colors duration-300 text-base flex items-center group">
+                <span className="text-gray-300 hover:text-pink-400 transition-colors duration-300 text-base flex items-center group cursor-pointer">
                   <span className="w-2 h-2 bg-pink-400 rounded-full mr-3 group-hover:scale-125 transition-transform"></span>
                   Mood Tracking
-                </Link>
+                </span>
               </li>
               <li>
-                <Link href="#" className="text-gray-300 hover:text-pink-400 transition-colors duration-300 text-base flex items-center group">
+                <span className="text-gray-300 hover:text-pink-400 transition-colors duration-300 text-base flex items-center group cursor-pointer">
                   <span className="w-2 h-2 bg-pink-400 rounded-full mr-3 group-hover:scale-125 transition-transform"></span>
                   Meditation Sessions
-                </Link>
+                </span>
               </li>
               <li>
-                <Link href="#" className="text-gray-300 hover:text-pink-400 transition-colors duration-300 text-base flex items-center group">
+                <span className="text-gray-300 hover:text-pink-400 transition-colors duration-300 text-base flex items-center group cursor-pointer">
                   <span className="w-2 h-2 bg-pink-400 rounded-full mr-3 group-hover:scale-125 transition-transform"></span>
                   Family Wellness
-                </Link>
+                </span>
               </li>
               <li>
-                <Link href="#" className="text-gray-300 hover:text-pink-400 transition-colors duration-300 text-base flex items-center group">
+                <span className="text-gray-300 hover:text-pink-400 transition-colors duration-300 text-base flex items-center group cursor-pointer">
                   <span className="w-2 h-2 bg-pink-400 rounded-full mr-3 group-hover:scale-125 transition-transform"></span>
                   Community Support
-                </Link>
+                </span>
               </li>
             </ul>
           </div>
@@ -138,15 +138,15 @@ const FooterSection = () => {
             </div>
             
             <div className="flex space-x-6 text-sm">
-              <Link href="#" className="text-gray-400 hover:text-pink-400 transition-colors">
+              <span className="text-gray-400 hover:text-pink-400 transition-colors cursor-pointer">
                 Privacy Policy
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-pink-400 transition-colors">
+              </span>
+              <span className="text-gray-400 hover:text-pink-400 transition-colors cursor-pointer">
                 Terms of Service
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-pink-400 transition-colors">
+              </span>
+              <span className="text-gray-400 hover:text-pink-400 transition-colors cursor-pointer">
                 Cookie Policy
-              </Link>
+              </span>
             </div>
           </div>
         </div>

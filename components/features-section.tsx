@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
-import { User } from "lucide-react";
+
 
 const features = [
   {
@@ -43,50 +42,8 @@ const features = [
   },
 ];
 
-// Testimonial data
-const testimonials = [
-  {
-    quote: "MindBloom has truly changed my life. The insights and support are unmatched!",
-    name: "Alex P.",
-    avatar: null
-  },
-  {
-    quote: "I love the mindfulness tools and the community. I feel seen and supported.",
-    name: "Jamie L.",
-    avatar: null
-  },
-  {
-    quote: "The AI-powered insights helped me understand my patterns and improve my mood.",
-    name: "Morgan S.",
-    avatar: null
-  },
-  {
-    quote: "Connecting with a licensed therapist was so easy and secure.",
-    name: "Taylor R.",
-    avatar: null
-  },
-  {
-    quote: "The privacy-first approach gives me peace of mind about my data.",
-    name: "Casey W.",
-    avatar: null
-  },
-  {
-    quote: "Personalized plans and daily challenges keep me motivated every day!",
-    name: "Jordan K.",
-    avatar: null
-  },
-];
-
-
 const FeaturesSection = () => {
-  const [testimonialIdx, setTestimonialIdx] = useState(0);
-  const handleRandomTestimonial = () => {
-    let nextIdx;
-    do {
-      nextIdx = Math.floor(Math.random() * testimonials.length);
-    } while (nextIdx === testimonialIdx && testimonials.length > 1);
-    setTestimonialIdx(nextIdx);
-  };
+  
   return (
     <section id="features" className="relative min-h-[600px] bg-gradient-to-br from-[#f3e8ff] to-[#e9d5ff] py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">

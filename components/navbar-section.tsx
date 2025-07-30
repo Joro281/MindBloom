@@ -1,7 +1,5 @@
 "use client";
 
-import { Menu, X, Heart, Star } from "lucide-react";
-import Link from "next/link";
 import { useUIStore } from "@/lib/store";
 
 const NavbarSection = () => {
@@ -36,9 +34,8 @@ const NavbarSection = () => {
       {isMenuOpen && (
         <div className="absolute top-14 right-0 bg-white/10 backdrop-blur-sm rounded-xl shadow-2xl border border-white/20 overflow-hidden min-w-52 animate-in slide-in-from-top-2 duration-300">
           <div className="py-3">
-            <Link 
-              href="#home" 
-              className="block px-6 py-4 text-gray-700 hover:text-pink-500 hover:bg-white/10 transition-all duration-300 text-center font-semibold text-base tracking-wide"
+            <button 
+              className="block w-full px-6 py-4 text-gray-700 hover:text-pink-500 hover:bg-white/10 transition-all duration-300 text-center font-semibold text-base tracking-wide"
               onClick={() => {
                 setMenuOpen(false);
                 setTimeout(() => {
@@ -54,11 +51,10 @@ const NavbarSection = () => {
               }}
             >
               Home
-            </Link>
+            </button>
 
-            <Link 
-              href="#features" 
-              className="block px-6 py-4 text-gray-700 hover:text-pink-500 hover:bg-white/10 transition-all duration-300 text-center font-semibold text-base tracking-wide"
+            <button 
+              className="block w-full px-6 py-4 text-gray-700 hover:text-pink-500 hover:bg-white/10 transition-all duration-300 text-center font-semibold text-base tracking-wide"
               onClick={() => {
                 setMenuOpen(false);
                 setTimeout(() => {
@@ -74,10 +70,9 @@ const NavbarSection = () => {
               }}
             >
               Features
-            </Link>
-            <Link 
-              href="#testimonials" 
-              className="block px-6 py-4 text-gray-700 hover:text-pink-500 hover:bg-white/10 transition-all duration-300 text-center font-semibold text-base tracking-wide"
+            </button>
+            <button 
+              className="block w-full px-6 py-4 text-gray-700 hover:text-pink-500 hover:bg-white/10 transition-all duration-300 text-center font-semibold text-base tracking-wide"
               onClick={() => {
                 setMenuOpen(false);
                 setTimeout(() => {
@@ -93,10 +88,9 @@ const NavbarSection = () => {
               }}
             >
               Testimonials
-            </Link>
-            <Link 
-              href="#pricing" 
-              className="block px-6 py-4 text-gray-700 hover:text-pink-500 hover:bg-white/10 transition-all duration-300 text-center font-semibold text-base tracking-wide"
+            </button>
+            <button 
+              className="block w-full px-6 py-4 text-gray-700 hover:text-pink-500 hover:bg-white/10 transition-all duration-300 text-center font-semibold text-base tracking-wide"
               onClick={() => {
                 setMenuOpen(false);
                 setTimeout(() => {
@@ -112,10 +106,9 @@ const NavbarSection = () => {
               }}
             >
               Pricing
-            </Link>
-            <Link 
-              href="#contact" 
-              className="block px-6 py-4 text-gray-700 hover:text-pink-500 hover:bg-white/10 transition-all duration-300 text-center font-semibold text-base tracking-wide"
+            </button>
+            <button 
+              className="block w-full px-6 py-4 text-gray-700 hover:text-pink-500 hover:bg-white/10 transition-all duration-300 text-center font-semibold text-base tracking-wide"
               onClick={() => {
                 setMenuOpen(false);
                 setTimeout(() => {
@@ -131,7 +124,7 @@ const NavbarSection = () => {
               }}
             >
               Contact
-            </Link>
+            </button>
           </div>
         </div>
       )}

@@ -3,9 +3,8 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useState } from "react";
-import { Smile, Meh, Frown, Calendar, TrendingUp, Zap } from "lucide-react";
+import { Smile, Meh, Frown, Calendar, Zap } from "lucide-react";
 import { Brain, Heart, Sun } from "lucide-react";
-import { useRef } from "react";
 
 const MoodTrackerSection = () => {
   const [selectedMood, setSelectedMood] = useState<string | null>(null);
@@ -48,12 +47,6 @@ const MoodTrackerSection = () => {
       bgColor: "bg-indigo-50", 
       borderColor: "border-indigo-200" 
     },
-  ];
-
-  const insights = [
-    { label: "Mood improvement", value: "+15%", color: "bg-pink-100 text-pink-700" },
-    { label: "Streak of good days", value: "7 days", color: "bg-purple-100 text-purple-700" },
-    { label: "Average mood score", value: "4.2/5", color: "bg-indigo-100 text-indigo-700" },
   ];
 
   const handleMoodSelect = (moodId: string) => {
@@ -161,7 +154,7 @@ const MoodTrackerSection = () => {
                 disabled={!selectedMood}
                 className="w-full bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white py-3 rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Log Today's Mood
+                Log Today&apos;s Mood
               </Button>
             </Card>
           </div>

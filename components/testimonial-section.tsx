@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { User, Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { User, Star } from "lucide-react";
 import Image from "next/image";
 
 const testimonials = [
@@ -248,18 +248,6 @@ const TestimonialSection = () => {
     return () => clearInterval(interval);
   }, [isAutoPlaying]);
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === testimonials.length - 3 ? 0 : prevIndex + 1
-    );
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? testimonials.length - 3 : prevIndex - 1
-    );
-  };
-
   return (
     <section id="testimonials" className="py-24 flex flex-col items-center justify-center bg-gradient-to-br from-[#f3e8ff] to-[#e9d5ff] relative px-8 overflow-hidden">
       {/* Section Header */}
@@ -273,7 +261,7 @@ const TestimonialSection = () => {
           What Our Users Say
         </h2>
         <p className="text-xl text-gray-600 max-w-2xl leading-relaxed mx-auto">
-          Real experiences from people who've found peace, growth, and balance with MindBloom.
+          Real experiences from people who&apos;ve found peace, growth, and balance with MindBloom.
         </p>
       </div>
 

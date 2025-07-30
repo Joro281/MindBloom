@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import { Heart, Brain, Sparkles } from "lucide-react";
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import AuthModal from "./auth-modal";
 import { useUIStore } from "@/lib/store";

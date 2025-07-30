@@ -26,7 +26,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
       {/* <ReactQueryDevtools initialIsOpen={false} position="bottom-right" /> */}
       
       {/* Top Right */}
-      <ReactQueryDevtools initialIsOpen={false} position="top-right" />
+      <ReactQueryDevtools initialIsOpen={false} />
       
       {/* Bottom Left */}
       {/* <ReactQueryDevtools initialIsOpen={false} position="bottom-left" /> */}

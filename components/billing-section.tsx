@@ -108,7 +108,7 @@ const BillingSection = () => {
       {/* Pricing Cards */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-          {plans.map((plan, index) => (
+          {plans.map((plan) => (
             <div
               key={plan.name}
               className={`relative bg-white rounded-2xl shadow-lg border-2 p-4 sm:p-6 transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-2 ${
@@ -144,8 +144,8 @@ const BillingSection = () => {
 
               {/* Features */}
               <div className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
-                {plan.features.map((feature, featureIndex) => (
-                  <div key={featureIndex} className="flex items-start gap-2 sm:gap-3">
+                {plan.features.map((feature) => (
+                  <div key={feature} className="flex items-start gap-2 sm:gap-3">
                     <Check className="w-3 h-3 sm:w-4 sm:h-4 text-green-500 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-800 text-xs sm:text-sm">{feature}</span>
                   </div>
