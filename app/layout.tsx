@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   description: "Discover personalized insights, connect with licensed professionals, and build lasting wellness habits with our comprehensive mental health platform.",
   keywords: ["mental health", "wellness", "therapy", "AI", "mindfulness", "self-care"],
   authors: [{ name: "MindBloom Team" }],
+  icons: {
+    icon: '/images/sakura.ico',
+  },
   openGraph: {
     title: "MindBloom - Your AI-Powered Mental Wellness Companion",
     description: "Discover personalized insights, connect with licensed professionals, and build lasting wellness habits with our comprehensive mental health platform.",
